@@ -97,6 +97,11 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\lib\mysql.data.dll</HintPath>
     </Reference>
+    <Reference Include="Npgsql, Version=2.0.11.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Npgsql.2.0.11\lib\Net11\Npgsql.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System">
       <Name>System</Name>
     </Reference>
@@ -109,19 +114,12 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\lib\System.Data.SQLite.DLL</HintPath>
     </Reference>
-    <Reference Include="Npgsql">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\lib\Npgsql.dll</HintPath>
-    </Reference>
     <Reference Include="System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\lib\System.Data.SqlServerCe.dll</HintPath>
     </Reference>
     <Reference Include="System.Web">
       <Name>System.Web</Name>
-    </Reference>
-    <Reference Include="System.Web.Services">
-      <Name>System.Web.Services</Name>
     </Reference>
     <Reference Include="System.Xml">
       <Name>System.XML</Name>
@@ -403,6 +401,9 @@
       <ProductName>Windows Installer 3.1</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
